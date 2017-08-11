@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "max-nesting-depth": 2,
+    "string-quotes": "double",
+    "block-no-empty": null,
+    "at-rule-empty-line-before": null,
+    "rule-non-nested-empty-line-before": null,
+    "indentation": [4, {ignore: ["inside-parens"]}],
+    "color-hex-length": "long",
+    "selector-pseudo-class-no-unknown": null,
+    "selector-type-no-unknown": null,
+  }
+}

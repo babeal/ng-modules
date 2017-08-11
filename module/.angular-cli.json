@@ -1,0 +1,67 @@
+{
+  "$schema": "./node_modules/@slb-planck-ui/web-cli/lib/config/schema.json",
+  "project": {
+    "version": "1.1.4",
+    "name": "@slb-planck-ui/module",
+    "scope": "@slb-planck-ui"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "vendor": "vendor.ts",
+      "polyfills": "polyfills.ts",
+      "stylelint": ".stylelintrc",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "styles": [
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "globalDependencies": {},
+      "npmVendorFiles": [
+        "@angular",
+        "core-js/client",
+        "rxjs",
+        "systemjs/dist",
+        "zone.js/dist"
+      ]
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "files": "src/**/*.ts",
+      "project": "src/tsconfig.json"
+    },
+    {
+      "files": "e2e/**/*.ts",
+      "project": "e2e/tsconfig.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "component": {}
+  }
+}
