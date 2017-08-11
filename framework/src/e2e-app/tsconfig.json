@@ -26,6 +26,9 @@
     "types": [
     ]
   },
+  "exclude": [
+    "./main-aot.ts"
+  ],
   "angularCompilerOptions": {
     "genDir": "../../dist",
     "skipTemplateCodegen": true,
