@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "es2015", "dom"],
+    "mapRoot": "",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "outDir": "../../dist/@slb-planck-ui/mwd",
+    "rootDir": ".",
+    "sourceMap": true,
+    "target": "es5",
+    "inlineSources": true,
+    "stripInternal": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["shared/*"]
+    },
+    "typeRoots": [
+      "../../node_modules/@types"
+    ],
+    "types": [
+    ]
+  },
+  "exclude": [
+    "**/*.spec.*",
+    "system-config-spec.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "../../dist/@slb-planck-ui/mwd",
+    "skipTemplateCodegen": true,
+    "debug": true
+  }
+}
